@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BNRItem.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -27,6 +28,18 @@ int main(int argc, const char * argv[]) {
             // Log the description of item
             NSLog(@"%@", item);
         }
+        
+        BNRItem *item = [[BNRItem alloc] init];
+        
+        item.itemName=@"Red Sofa";
+        
+        item.serialNumber=@"A1B2C";
+        
+        item.valueInDollars=100;
+        
+        // The %@ token is replaced with the result of sending
+        // the description message to the corresponding argument
+        NSLog(@"%@", item);
         
         // Destroy the mutable array object
         items = nil;
