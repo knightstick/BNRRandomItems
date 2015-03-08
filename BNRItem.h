@@ -16,7 +16,7 @@
     NSDate *_dateCreated;
     
     BNRItem *_containedItem;
-    BNRItem *_container;
+    __weak BNRItem *_container;
 }
 
 + (instancetype)randomItem;
@@ -30,10 +30,10 @@
 
 - (instancetype)initWithItemName:(NSString *)name serialNumber:(NSString *)sNumber;
 
--(void)setContainedItem;
+-(void)setContainedItem:(BNRItem *)item;
 -(BNRItem *)containedItem;
 
--(void)setContainer;
+-(void)setContainer:(BNRItem *)item;
 -(BNRItem *)container;
 
 
