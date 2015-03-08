@@ -25,6 +25,8 @@
 
 - (instancetype)initWithItemName:(NSString *)name;
 
+- (instancetype)initWithItemName:(NSString *)name serialNumber:(NSString *)sNumber;
+
 
 - (void)setItemName:(NSString *)str;
 - (NSString *)itemName;

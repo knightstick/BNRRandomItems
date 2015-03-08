@@ -19,6 +19,9 @@ int main(int argc, const char * argv[]) {
             [items addObject:item];
         }
         
+        BNRItem *item = [[BNRItem alloc] initWithItemName:@"Rusty Spoon" serialNumber:@"A1A2A3"];
+        items[10] = item;
+        
         for (BNRItem *item in items) {
             NSLog(@"%@", item);
         }
