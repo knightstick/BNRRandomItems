@@ -24,8 +24,8 @@
     
     // Note that NSInteger is not an object, but a type definition for "long"
     
-    NSString *randomName = [NSString stringWithFormat:@"%@ %@", [randomAdjectiveList objectAtIndex:adjectiveIndex],
-                                                                [randomNounList objectAtIndex:nounIndex]];
+    NSString *randomName = [NSString stringWithFormat:@"%@ %@", randomAdjectiveList[adjectiveIndex],
+                                                                randomNounList[nounIndex]];
     int randomValue = arc4random() % 100;
     
     NSString *randomSerialNumber = [NSString stringWithFormat:@"%c%c%c%c%c", '0' + arc4random() % 10,
